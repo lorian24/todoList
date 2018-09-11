@@ -1,0 +1,114 @@
+body{
+	background: #f5f5f5;
+	font-family: Arial;
+	display: grid;
+	grid-template-columns: repeat(2,470px);
+	grid-column-gap: 20px;
+	justify-content:center;
+	margin-top: 65px;
+}
+
+h2{
+	font-size: 21px;
+	color: black;
+	margin-bottom: 30px;
+}
+
+p{
+	font-size: 14px;
+	color: #8993ad;
+}
+
+
+
+/***********************ДОБАВИТЬ НОВОЕ ДЕЛО************************/
+#form{
+	background: white;
+	height: 540px;
+}
+	.input{
+		background: #fcfcfc;
+		font-size: 16px;
+		color: black;
+		margin-top: 10px;
+		border: 1px solid #ebebeb;
+		width: 390px;
+	}
+
+	button{
+		background: #2174fd;
+		width: 224px;
+		height: 55px;
+		color: white;
+		}
+
+	#form p{
+		padding-top: 29px;
+	}
+
+	button{
+		margin-top: 30px;
+	}
+
+	#form p, button, .input{
+			margin-left:40px;
+			margin-right: 40px; 
+		}
+
+	textarea {
+		resize: none;
+		height: 230px;
+	}
+
+	input{
+		height: 45px;
+	}
+
+	/*********************************СПИСОК ДЕЛ*********************************/
+	#taskList p{
+		margin-top: 59px;
+	}
+
+	.listItem li {
+		background: white;
+		font-size: 14px;
+		padding: 18px 40px 0px 19px;
+		position: relative;
+		height: 136px;
+		margin-bottom: 20px;
+		word-break: break-all;
+	}
+
+		.title {
+			display: inline-block;
+			font-size: 16px;
+			color: black;
+			margin-bottom: 17px;q
+		}
+
+		.description {
+			display: block;
+			border-top: 1px solid #f7f7f7;
+			padding-top: 10px;
+			color: #8993ad;
+		}
+		
+		.closeBtn {
+			background-image: url("../img/clear-button.png");
+			display: inline-block;
+			width: 9px;
+			height:9px;
+			cursor: pointer;
+			margin-left: 20px;
+		}
+
+		.arrow {
+			background-image: url("../img/arrow.png");
+			display: inline-block;
+			width: 6px;
+			height:5px;
+			cursor: pointer;
+			position: absolute;
+			top: 24px;
+			right: 24px;
+		}

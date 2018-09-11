@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDo List</title>
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/styles.css">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script src="script.js"></script>
+
+</head>
+<body>
+	<div id="taskList">
+		<h2> Список дел:</h2>
+		<p>Список дел пуст...</p>
+		<ul class="listItem">
+
+		</ul>
+	</div>
+
+	<div id="addNewTask">
+		<h2> Добавить новое дело</h2>
+		<div id="form" method="post">
+			<p>* Название</p>
+			<input type="text" class="input input-task" id="taskName">
+			<p>* Описание</p>
+			<textarea class="input textarea-task" id="textarea"></textarea>
+			<button class="add-task">Добавить дело</button>
+		</div>
+	</div>
+</body>
+</html>
