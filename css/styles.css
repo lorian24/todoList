@@ -1,11 +1,12 @@
-body{
+html, body{
 	background: #f5f5f5;
-	font-family: Arial;
-	display: grid;
-	grid-template-columns: repeat(2,470px);
-	grid-column-gap: 20px;
-	justify-content:center;
-	margin-top: 65px;
+	font-family: Arial, sans-serif;
+	}
+
+h1 {
+	font-size: 30px;
+	color: #2174fd;
+	margin-bottom: 30px;
 }
 
 h2{
@@ -19,7 +20,13 @@ p{
 	color: #8993ad;
 }
 
-
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(2,470px);
+	grid-column-gap: 20px;
+	justify-content:center;
+	margin-top: 65px;
+}
 
 /***********************ДОБАВИТЬ НОВОЕ ДЕЛО************************/
 #form{
@@ -52,12 +59,13 @@ p{
 
 	#form p, button, .input{
 			margin-left:40px;
-			margin-right: 40px; 
+			margin-right: 40px;
 		}
 
 	textarea {
 		resize: none;
 		height: 230px;
+		font-family: Arial, sans-serif;
 	}
 
 	input{
@@ -74,7 +82,6 @@ p{
 		font-size: 14px;
 		padding: 18px 40px 0px 19px;
 		position: relative;
-		height: 136px;
 		margin-bottom: 20px;
 		word-break: break-all;
 	}
@@ -83,15 +90,26 @@ p{
 			display: inline-block;
 			font-size: 16px;
 			color: black;
-			margin-bottom: 17px;q
+			margin-bottom: 17px;
+			vertical-align: top;
 		}
-
-		.description {
+		.descriptionContainer {
 			display: block;
 			border-top: 1px solid #f7f7f7;
 			padding-top: 10px;
 			color: #8993ad;
+			min-height: 56px;
+			padding-bottom: 10px;
 		}
+		
+			.moreLink {
+				color: #2174fd;
+				display: block;
+				padding-bottom: 20px;
+				cursor: pointer;
+				text-decoration: underline;
+				text-decoration-style: dashed;
+			}
 		
 		.closeBtn {
 			background-image: url("../img/clear-button.png");
@@ -111,4 +129,48 @@ p{
 			position: absolute;
 			top: 24px;
 			right: 24px;
+			transition: transform 500ms;
 		}
+		.arrow.revert {
+			transform: rotate(90deg);
+			
+/************************Попап**********************/		}
+.preventScroll{
+	overflow: hidden;
+}
+.popup {
+	background: rgba(0,0,0,0.7);
+	z-index: 9;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	position: fixed;
+	display:none;
+	overflow: auto;
+}
+.container {
+	width: 500px;
+	height: 600px;
+	background: white;
+	z-index: 10;
+	margin: 100px auto;
+	position: relative;
+}
+.popup button{
+	background:red;
+	width: 224px;
+	height: 55px;
+	color: white;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-left: -112px;
+}
+.content {
+	padding: 40px 40px;
+}
+	.content p{
+		font-size: 18px;
+		color: black;
+	}

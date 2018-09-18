@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>ToDo List</title>
 	<link rel="stylesheet" type="text/css" href="./css/reset.css">
 	<link rel="stylesheet" type="text/css" href="./css/styles.css">
@@ -9,23 +10,26 @@
 
 </head>
 <body>
-	<div id="taskList">
-		<h2> Список дел:</h2>
-		<p>Список дел пуст...</p>
-		<ul class="listItem">
-
-		</ul>
-	</div>
-
-	<div id="addNewTask">
-		<h2> Добавить новое дело</h2>
-		<div id="form" method="post">
-			<p>* Название</p>
-			<input type="text" class="input input-task" id="taskName">
-			<p>* Описание</p>
-			<textarea class="input textarea-task" id="textarea"></textarea>
-			<button class="add-task">Добавить дело</button>
+	<div class="wrapper">
+		<div id="taskList">
+			<h2> Список дел:</h2>
+			<p>Список дел пуст...</p>
+			<ul class="listItem">
+			
+			</ul>
+		</div>
+		
+		<div id="addNewTask">
+			<h2> Добавить новое дело</h2>
+			<div id="form" method="post">
+				<p>* Название</p>
+				<input type="text" class="input input-task" id="taskName">
+				<p>* Описание</p>
+				<textarea class="input textarea-task" id="textarea"></textarea>
+				<button class="add-task">Добавить дело</button>
+			</div>
 		</div>
 	</div>
+	<div class="popup"><div class="container"><div class="content"></div><button class="popup-btn">AWESOME!</button></div></div>
 </body>
 </html>
